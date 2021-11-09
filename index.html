@@ -6,14 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Email</title>
+    <style>
+        li {
+            list-style: none;
+        }
+    </style>
 </head>
 
 <body>
 <div id="app">
-    <div v-for="(email, i) in emails">
+    <div v-for="(email,i) in emails">
         <ol>
             <li>
-                {{email}}
+                {{i+1}}. {{email}}
             </li>
         </ol>
 </div>
